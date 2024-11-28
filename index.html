@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center bg-orange-900 p-4 sticky top-0 z-50">
+        <div class="flex items-center space-x-3">
+            <i class="fa-solid fa-mug-hot text-2xl text-orange-500"></i>
+            <h1 class="italic font-bold text-2xl text-white">Coffee Cafe</h1>
+        </div>
+        <div class="hidden md:flex space-x-8 text-white">
+            <a href="#" class="hover:text-orange-400">Home</a>
+            <a href="#Services" class="hover:text-orange-400">Services</a>
+            <a href="#About" class="hover:text-orange-400">About</a>
+            <a href="#Blog" class="hover:text-orange-400">Blog</a>
+            <button
+                class="flex items-center space-x-2 bg-orange-700 px-4 py-2 rounded-full hover:bg-orange-600">
+                Order <i class="fa-solid fa-mug-hot"></i>
+            </button>
+        </div>
+        <button id="menu-toggle" class="md:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden bg-orange-900 text-white p-4">
+        <ul class="space-y-4">
+            <li><a href="#" class="hover:text-orange-400">Home</a></li>
+            <li><a href="#Services" class="hover:text-orange-400">Services</a></li>
+            <li><a href="#About" class="hover:text-orange-400">About</a></li>
+            <li><a href="#Blog" class="hover:text-orange-400">Blog</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-orange-950 text-white py-12 px-4 flex flex-wrap md:flex-nowrap items-center">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h1 class="text-4xl font-bold mb-4">We serve the <br><span class="italic text-orange-700">richest Coffee</span> in the city</h1>
+            <button
+                class="px-4 py-2 border border-white rounded-full bg-orange-800 hover:bg-orange-700">
+                Coffee and Code
+            </button>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col items-center">
+            <button class="px-4 py-2 bg-orange-800 rounded-full hover:bg-orange-700 mb-4">
+                Hey Coder
+            </button>
+            <img class="h-48 w-auto mb-4"
+                src="https://png.pngtree.com/png-vector/20240623/ourmid/pngtree-flying-cup-of-coffee-with-splash-and-png-image_12831547.png"
+                alt="Coffee">
+            <button class="px-4 py-2 bg-orange-800 rounded-full hover:bg-orange-700">
+                Best Coffee
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="py-12 px-4">
+        <h1 class="text-center text-4xl font-bold italic mb-8">Best Coffee For You</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white shadow-xl p-6 rounded-xl text-center">
+                <img class="h-32 w-32 mx-auto mb-4"
+                    src="https://png.pngtree.com/png-clipart/20240115/original/pngtree-coffee-3d-teacup-element-three-dimensional-buckle-free-pattern-png-image_14119665.png"
+                    alt="Espresso">
+                <h2 class="font-bold text-xl mb-2">Espresso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis ratione officiis at modi...</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl text-center">
+                <img class="h-32 w-32 mx-auto mb-4"
+                    src="https://static.vecteezy.com/system/resources/previews/022/687/311/non_2x/coffee-cup-3d-realistic-free-download-free-png.png"
+                    alt="Americano">
+                <h2 class="font-bold text-xl mb-2">Americano</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis ratione officiis at modi...</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl text-center">
+                <img class="h-32 w-32 mx-auto mb-4"
+                    src="https://static.vecteezy.com/system/resources/thumbnails/021/049/268/small_2x/3d-realistic-coffee-cup-coffee-cup-cartoon-free-png.png"
+                    alt="Cappuccino">
+                <h2 class="font-bold text-xl mb-2">Cappuccino</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis ratione officiis at modi...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="Services" class="bg-cover bg-center py-16 px-4"
+        style="background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-geometric-pattern-white-gold-minimalist-creative-background-image_879782.jpg');">
+        <div class="max-w-6xl mx-auto flex flex-wrap md:flex-nowrap items-center">
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <img class="mx-auto md:mx-0 h-48 mb-8"
+                    src="https://png.pngtree.com/png-vector/20240823/ourmid/pngtree-black-coffee-cup-with-beans-transparent-free-download-png-image_13596381.png"
+                    alt="Coffee">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-4xl font-bold italic mb-4">Premium Blend Coffee</h2>
+                <p class="mb-4 text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt iste consequatur voluptatibus aspernatur!</p>
+                <div class="flex space-x-8">
+                    <ul>
+                        <li><i class="fa-solid fa-unlock text-orange-400"></i> Premium Coffee</li>
+                        <li><i class="fa-solid fa-mug-hot text-orange-400"></i> Hot Coffee</li>
+                        <li><i class="fa-solid fa-mug-saucer text-orange-400"></i> Cold Coffee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Coffice avabile section-->
+    <section class="bg-[url(https://images8.alphacoders.com/939/939996.jpg)] bg-no-repeat bg-cover bg-center flex flex-col items-center h-[260px] px-5 md:pl-36">
+        <div class="text-center md:text-left">
+            <h1 class="text-white font-bold text-2xl md:text-4xl pt-6 md:pt-12 pb-4 md:pb-8">
+                Coffee Cafe is available <br class="hidden md:block"> for Android and IOS
+            </h1>
+        </div>
+        <div class="flex flex-wrap justify-center md:justify-start space-x-4">
+            <img class="h-[40px] md:h-[60px] object-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Play Store">
+            <img class="h-[40px] md:h-[60px] object-cover" src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="Apple App Store">
+        </div>
+    </section>  
+    <!--Blogs section-->
+    <div id="Blog">
+        <section class="mt-32 px-5">
+            <h1 class="italic text-center font-bold text-2xl md:text-4xl pb-8 md:pb-16">Testimonials</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="w-full bg-orange-200 p-6 rounded-xl">
+                    <img class="h-20 w-20 object-cover rounded-full mx-auto md:mx-0" src="https://static.cdn.asset.aparat.com/avt/10005661-5170-b__7666.jpg" alt="Sabir ali">
+                    <p class="pt-6 pb-6 text-slate-700 text-center md:text-left">
+                        Lorem ipsum dolor sit amet consect adipisicing elit. Aut numquam nobis nostrum suscipit assumenda?
+                    </p>
+                    <h2 class="text-xl font-bold text-center md:text-left">Sabir Ali</h2>
+                </div>
+                <div class="w-full bg-orange-200 p-6 rounded-xl">
+                    <img class="h-20 w-20 object-cover rounded-full mx-auto md:mx-0" src="https://www.state.gov/wp-content/uploads/2018/11/Germany-2109x1406.jpg" alt="Dipankar Kumar">
+                    <p class="pt-6 pb-6 text-slate-700 text-center md:text-left">
+                        Lorem ipsum dolor sit amet consect adipisicing elit. Aut numquam nobis nostrum suscipit assumenda?
+                    </p>
+                    <h2 class="text-xl font-bold italic text-center md:text-left">Dipankar Kumar</h2>
+                </div>
+                <div class="w-full bg-orange-200 p-6 rounded-xl">
+                    <img class="h-20 w-20 object-cover rounded-full mx-auto md:mx-0" src="https://i.ytimg.com/vi/Qk30DJJO0AM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBljdwZxBCZPjSvMPRvZ-TAhacJ_A" alt="Satya Narayan">
+                    <p class="pt-6 pb-6 text-slate-700 text-center md:text-left">
+                        Lorem ipsum dolor sit amet consect adipisicing elit. Aut numquam nobis nostrum suscipit assumenda?
+                    </p>
+                    <h2 class="text-xl font-bold italic text-center md:text-left">Satya Narayan</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Footer section-->
+    <div id="Contact">
+        <section class="flex flex-wrap bg-[url(https://www.best-coffee-things.com/images/RoastingCoffeeBeans.jpg)] bg-cover bg-center h-auto md:h-[420px] mt-28 px-8 py-16 md:py-0 md:pl-20 gap-16">
+            <!-- Brand Information -->
+            <div class="text-white flex-1 min-w-[250px] ">
+                <h1 class="italic font-bold text-2xl md:text-4xl pb-4">Coffee Cafe</h1>
+                <p class="font-medium pb-4">
+                    Crafted Coffee, Cozy Vibes, Unforgettable <br class="hidden md:block"> Moments - Your Perfect Espresso Escape
+                </p>
+                <button class="bg-orange-950 text-white font-medium py-2 px-4 rounded-full">
+                    <a href="https://www.youtube.com/">Visit YouTube Channel</a>
+                </button>
+            </div>
+            <!-- Important Links -->
+            <div class="text-white flex-1 min-w-[200px]">
+                <h1 class="italic font-bold text-xl md:text-2xl pb-6">Important Links</h1>
+                <ul class="font-medium space-y-4">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="text-white flex-1 min-w-[200px]">
+                <h1 class="italic font-bold text-xl md:text-2xl pb-6">Quick Links</h1>
+                <ul class="font-medium space-y-4">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Address -->
+            <div class="text-white flex-1 min-w-[200px]">
+                <h1 class="italic font-bold text-xl md:text-2xl pb-6">Address</h1>
+                <p class="pb-4 font-medium">Jamuna Future Park, Dhaka</p>
+                <p class="pb-4 font-medium">+8801781785236</p>
+                <p class="pb-4 font-medium">joybaidyabd@gmail.com</p>
+            </div>
+           
+        </section>
+        <div class="text-bold font-bold text-base md:text-xl lg:text-xl text-center text-white bg-orange-900">
+            <h1 class="text-center">&copy;Developed by Joy 2024 First Tailwind Project</h1>
+        </div>
+    </div>    
+    <script src="javaScript.js"></script>
+</body>
+
+</html>
